@@ -134,3 +134,63 @@ html,
 body {
   height: 100%;
 }
+:root {
+  font-size: 100%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+.panel {
+  display: flex;
+  max-width: 100%;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  margin-left: 60px;
+  margin-right: 20px;
+  width: 100%;
+  text-decoration: none;
+  color: grey;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: light blue;
+}
+.header img {
+  width: 20%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.header1 {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 2.5rem;
+  color: grey;
+}
+.header p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: grey;
+}
+.header h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.header button {
+  width: 20%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
