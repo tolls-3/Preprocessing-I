@@ -111,20 +111,22 @@ body{
 	margin-top:20px;
 	justify-content: flex-end;
 
+	nav{
+		display:flex;
+		justify-content: space-around;
+		// border:2px solid green;
+	}
+	nav a{
+		margin-left:60px;
+		margin-right:20px;
+		width:100%;
+		text-decoration: none;
+		color:@primaryColor;
+	}
+
 }
 
-nav{
-	display:flex;
-	justify-content: space-around;
-	// border:2px solid green;
-}
-nav a{
-	margin-left:60px;
-	margin-right:20px;
-	width:100%;
-	text-decoration: none;
-	color:@primaryColor;
-}
+
 
 
 
@@ -181,21 +183,25 @@ button{
 	margin-left:20px;
 	margin-right:20px;
 	justify-content: space-between;
+
+	.left-content{
+		// border:2px solid red;
+		width:50%;
+	
+	}
+
+	.right-content{
+		.flex1-defaults();
+		// border:2px solid red;
+		width:50%;
+		align-items: center;
+	}
 	
 }
 
-.left-content{
-	// border:2px solid red;
-	width:50%;
 
-}
 
-.right-content{
-	.flex1-defaults();
-	// border:2px solid red;
-	width:50%;
-	align-items: center;
-}
+
 
 h2{
 		margin-bottom:5px;
@@ -228,6 +234,7 @@ table, th, td {
 
 	background-color: @secondaryColor;
 	  text-align:center;
+	  margin-bottom: 10px;
 	  
   }
 

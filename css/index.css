@@ -160,11 +160,11 @@ body {
   margin-top: 20px;
   justify-content: flex-end;
 }
-nav {
+.panel nav {
   display: flex;
   justify-content: space-around;
 }
-nav a {
+.panel nav a {
   margin-left: 60px;
   margin-right: 20px;
   width: 100%;
@@ -213,10 +213,10 @@ h3 {
   margin-right: 20px;
   justify-content: space-between;
 }
-.left-content {
+.top-content .left-content {
   width: 50%;
 }
-.right-content {
+.top-content .right-content {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -247,6 +247,7 @@ table {
 footer {
   background-color: darkgrey;
   text-align: center;
+  margin-bottom: 10px;
 }
 .tableheading {
   margin-left: 20px;
