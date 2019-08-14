@@ -137,12 +137,22 @@ body {
 :root {
   font-size: 100%;
 }
+@media (max-width: 550px) {
+  :root {
+    font-size: 120%;
+  }
+}
+body {
+  max-width: 100%;
+  height: 100%;
+  background-color: white;
+}
 .container {
   margin: 0 auto;
   max-width: 800px;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  background-color: white;
 }
 .panel {
   display: flex;
@@ -167,12 +177,22 @@ nav a {
   max-width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: light blue;
+  background-color: darkgrey;
+}
+.header p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: grey;
 }
 .header img {
   width: 20%;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+.header button {
+  width: 20%;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 .header1 {
   margin-bottom: 20px;
@@ -180,20 +200,11 @@ nav a {
   font-size: 2.5rem;
   color: grey;
 }
-.header p {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  color: grey;
-}
 h2,
 h3 {
+  color: blue;
   font-size: 1.2rem;
   margin-top: 10px;
-}
-.header button {
-  width: 20%;
-  margin-left: 20px;
-  margin-bottom: 10px;
 }
 .top-content {
   display: flex;
@@ -213,12 +224,6 @@ h3 {
 h2 {
   margin-bottom: 5px;
 }
-.middle-content {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
 table,
 th,
 td {
@@ -233,9 +238,15 @@ th {
   font-weight: bold;
 }
 table {
-  width: 94%;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 footer {
-  background-color: darkslategrey;
+  background-color: darkgrey;
   text-align: center;
+}
+.tableheading {
+  margin-left: 20px;
 }
