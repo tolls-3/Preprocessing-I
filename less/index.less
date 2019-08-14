@@ -65,11 +65,11 @@ html, body {
 // @mediumPadding: 0.5rem;
 
 // // mixins
-// .my-flex-defaults() {
-// 	display: flex;
-// 	align-items: baseline;
-// 	justify-content: space-between;
-//   }
+.flex1-defaults() {
+	display: flex;
+	flex-direction:column;
+
+ }
 
 // colors
 
@@ -98,8 +98,7 @@ body{
 .container{
 	margin: 0 auto;
 	max-width: 800px;
-	display:flex;
-	flex-direction:column;
+	.flex1-defaults();
 	// border:2px solid red;
 	background-color:@backgroundColor;
 	
@@ -144,8 +143,7 @@ nav a{
 
   
 .header{
-	display:flex;
-	flex-direction:column;
+	.flex1-defaults();
 	max-width:100%;
 	// border:2px solid blue;
 	margin-top:20px;
@@ -204,8 +202,7 @@ button{
 }
 
 .right-content{
-	display:flex;
-	flex-direction: column;
+	.flex1-defaults();
 	// border:2px solid red;
 	width:50%;
 	align-items: flex-end;
