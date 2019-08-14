@@ -56,9 +56,9 @@ table {
 html, body {
     height: 100%;
 }
-// // font sizes for root
-// @desktopRootFontSize: 100%;
-// @mobileRootFontSize: 150%;
+// //font sizes for root
+@desktopRootFontSize: 100%;
+@mobileRootFontSize: 150%;
 
 // // paddings
 // @largePadding: 1rem;
@@ -72,11 +72,11 @@ html, body {
 //   }
 
 :root {
-	font-size: 100%;
+	// font-size: 100%;
   
-	// @media(max-width: @mobileBreakpoint) {
-	//   font-size: @mobileRootFontSize;
-	// }
+	@media(max-width: @mobileBreakpoint) {
+	font-size: @mobileRootFontSize;
+	 }
   }
   
 
@@ -124,9 +124,7 @@ nav a{
 // 	  flex-direction: column;
 // 	}
 
-body{
-	
-}
+
   
 .header{
 	display:flex;
@@ -136,12 +134,20 @@ body{
 	margin-top:20px;
 	margin-bottom:20px;
 	background-color: light blue;
-}
 
-.header img{
+	p{
+		// border:2px solid red;
+		margin-bottom:20px;
+		margin-left:20px;	
+		color: grey;
+	}
+
+
+img{
 	width:20%;
 	margin-left:20px;
 	margin-bottom:20px;
+}
 }
 
 .header1{
@@ -151,12 +157,7 @@ body{
 	font-size:2.5rem;
 	color: grey;
 }
-.header p{
-	// border:2px solid red;
-	margin-bottom:20px;
-	margin-left:20px;	
-	color: grey;
-}
+
 	h2, h3{
 	font-size:1.2rem;
 	margin-top:10px;
@@ -209,11 +210,13 @@ table, th, td {
 	
   }
   th, td {
-	padding: 5px;
+	padding: 10px;
   }
   th {
 	text-align: left;
-  }
+	font-weight: bold;
+
+}
   table{
 	  width:94%;
   }
