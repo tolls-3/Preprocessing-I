@@ -56,4 +56,189 @@ table {
 html, body {
     height: 100%;
 }
+// //font sizes for root
+@desktopRootFontSize: 100%;
+@mobileRootFontSize: 120%;
 
+// // paddings
+// @largePadding: 1rem;
+@mediumPadding: 0.5rem;
+
+// // mixins
+.flex1-defaults() {
+	display: flex;
+	flex-direction:column;
+
+ }
+
+// colors
+
+@primaryColor: grey;
+@secondaryColor:darkgrey;
+@tertiaryColor:blue;
+@backgroundColor:white;
+ 
+@mobileBreakpoint:500px;
+
+
+:root {
+	// font-size: 100%;
+	font-size:@desktopRootFontSize;
+	@media(max-width: @mobileBreakpoint) {
+	font-size: @mobileRootFontSize;
+	 }
+  }
+  
+body{
+ max-width:100%;
+ height:100%;
+ background-color:white;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 800px;
+	.flex1-defaults();
+	// border:2px solid red;
+	background-color:@backgroundColor;
+	
+}
+
+.panel{
+	display:flex;
+	max-width:100%;
+	// border:2px solid blue;
+	margin-top:20px;
+	justify-content: flex-end;
+
+	nav{
+		display:flex;
+		justify-content: space-around;
+		// border:2px solid green;
+	}
+	nav a{
+		margin-left:60px;
+		margin-right:20px;
+		width:100%;
+		text-decoration: none;
+		color:@primaryColor;
+	}
+
+}
+
+
+
+
+
+
+  
+.header{
+	.flex1-defaults();
+	max-width:100%;
+	// border:2px solid blue;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color: @secondaryColor;
+	padding:@mediumPadding;
+
+	p{
+		// border:2px solid red;
+		margin-bottom:20px;
+		margin-left:20px;	
+		color: @primaryColor;
+	}
+
+
+img{
+	width:20%;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+button{
+	width:20%;
+	margin-left:20px;
+	margin-bottom:10px;
+}
+}
+
+.header1{
+	// border:2px solid red;
+	margin-bottom:20px;
+	margin-left:20px;
+	font-size:2.5rem;
+	color: @primaryColor;
+}
+
+	h2, h3{
+	color: @tertiaryColor;
+	font-size:1.2rem;
+	margin-top:10px;
+}
+
+
+
+.top-content{
+	display:flex;
+	// border:2px solid blue;
+	margin-left:20px;
+	margin-right:20px;
+	justify-content: space-between;
+
+	.left-content{
+		// border:2px solid red;
+		width:50%;
+	
+	}
+
+	.right-content{
+		.flex1-defaults();
+		// border:2px solid red;
+		width:50%;
+		align-items: center;
+	}
+	
+}
+
+
+
+
+
+h2{
+		margin-bottom:5px;
+}
+
+
+
+table, th, td {
+	border: 1px dashed blue;
+	background-color:@secondaryColor;
+	
+	
+  }
+  th, td {
+	padding: 10px;
+  }
+  th {
+	text-align: left;
+	font-weight: bold;
+
+}
+  table{
+	  width:90%;
+	//   background-color: red;
+	  margin-bottom: 20px;
+	  margin-left:20px;
+	  margin-right:20px;
+  }
+
+  footer{
+
+	background-color: @secondaryColor;
+	  text-align:center;
+	  margin-bottom: 10px;
+	  
+  }
+
+  .tableheading{
+	  margin-left:20px;
+  }
